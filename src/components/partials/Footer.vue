@@ -4,8 +4,6 @@ const p = ref(window.location.protocol === "https:" ? "s" : "");
 </script>
 
 <template>
-  <scriptx
-    :src="'http' + p + '://code.tidio.co/gcsnhbjfdlwnqqzpjq42crtkxhdfycje.js'"
-  ></scriptx>
+ 
   
 </template>

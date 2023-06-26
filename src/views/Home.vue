@@ -30,7 +30,7 @@ onMounted(() => {
 const handleSubmit = () => {
   if (inpSearch.value) {
     router.push({
-      name: "Halaman Pencarian",
+      name: "/",
       params: { searchQuery: inpSearch.value },
     });
   }
@@ -65,7 +65,7 @@ const onSubmit = () => {
             placeholder="Search new"
           />
           <button
-            class="focus:ring-blue-6000 absolute right-2.5 top-1/2 flex h-11 w-11 -translate-y-1/2 transform items-center justify-center rounded-full bg-violet-600 !leading-none text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:bg-opacity-70"
+            class="focus:ring-blue-6000 absolute right-2.5 top-1/2 flex h-11 w-11 -translate-y-1/2 transform items-center justify-center rounded-full bg-violet-600 !leading-none text-white hover:bg-violet-700 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:bg-opacity-70"
             type="submit"
             @click.prevent="handleSubmit()"
           >
